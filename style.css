@@ -21,24 +21,24 @@ button {
     font-family: 'Barlow', sans-serif;
     font-size: larger;
 }
-table {
-    width: inherit;
-}
+
 .operator, .number {
     cursor: pointer;
 }
 .empty, .number {
     background-color: white;
 }
-article {
+form {
     text-align: right;
     font-family: 'Barlow', sans-serif;
     margin-top: 10%;
 }
-#result {
-    font-size: 40px;
-    height: 70px;
-    padding-right: 15px;
+input {
+    font-size: 30px;
+    text-align: right;
+    font-family: 'Barlow', sans-serif;
+    border: 0;
+    max-width: 320px;
 }
 #top-result {
     font-size: 20px;
