@@ -1,12 +1,13 @@
 body {
-    background-color: tomato;
+    background: linear-gradient(110deg, #df9881 50%, #58949c 50%);
+    background-attachment: fixed;
 }
 section {
     width: 320px;
     padding: 15px;
     padding-right: 30px;
     border-radius: 5%;
-    background-color: white;
+    background-color: #DFD8DC;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,31 +22,37 @@ button {
     font-family: 'Barlow', sans-serif;
     font-size: larger;
 }
-
 .operator, .number {
     cursor: pointer;
 }
 .empty, .number {
-    background-color: white;
+    background-color: transparent;
 }
 form {
     text-align: right;
     font-family: 'Barlow', sans-serif;
-    margin-top: 10%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    width: 338px;
 }
 input {
     font-size: 30px;
     text-align: right;
     font-family: 'Barlow', sans-serif;
-    border: 0;
-    max-width: 320px;
-}
-#top-result {
-    font-size: 20px;
-    padding-right: 30px;
-    color: rgba(163, 157, 157, 0.795);
-    height: 50px;
+    width: 300px;
+    border-radius: 50vh;
+    border-color: #eba68f #58949c #58949c #eba68f;
+    background-color: transparent;
+    padding: 10px 10px 10px 0;
 }
 .empty:focus, .operator:focus, .number:focus {
     outline: 0;
+}
+#C, #CE {
+    background-color: #98d5dd;
+}
+#divide, #multiply, #minus, #plus, #equal, #point {
+    background-color: rgb(226, 186, 159);
 }
