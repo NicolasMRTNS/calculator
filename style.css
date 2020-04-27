@@ -10,8 +10,33 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   height: 100%;
-  max-width: 400px;
   margin: auto;
+  font-family: "Barlow", sans-serif;
+}
+header {
+  margin: auto;
+  color: #58949c;
+  font-size: 50px;
+}
+.use {
+  color: #58949c;
+  font-size: 20px;
+  position: relative;
+  top: -455px;
+  margin-left: auto;
+  margin-right: 65.5%;
+}
+.by {
+  color: #df9881;
+  font-size: 20px;
+  position: relative;
+  top: -250px;
+  margin-right: auto;
+  margin-left: 65.5%;
+}
+.linkgit {
+  text-decoration: underline;
+
 }
 .calculator {
   width: 400px;
@@ -24,8 +49,10 @@ body {
   flex-direction: column;
   -webkit-box-pack: center;
   justify-content: center;
-  margin: auto;
-  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  position: relative;
 }
 button {
   width: 50px;
@@ -55,6 +82,9 @@ form {
   justify-content: center;
   width: 400px;
 }
+table {
+  margin: auto;
+}
 td {
   text-align: center;
 }
@@ -62,7 +92,7 @@ input {
   font-size: 30px;
   text-align: right;
   font-family: "Barlow", sans-serif;
-  width: 335px;
+  width: 300px;
   border-radius: 50vh;
   border-color: #eba68f #58949c #58949c #eba68f;
   background-color: transparent;
@@ -87,7 +117,7 @@ footer {
   flex-direction: row;
   margin: auto auto 0 auto;
   border-top: #df9881 2px solid;
-  color: #dfd8dc;
+  color: #df9881;
   width: 400px;
   font-size: 20px;
   font-family: "Barlow", sans-serif;
