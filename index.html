@@ -10,43 +10,47 @@
 </head>
 
 <body>
-    <section>
+    <section class="calculator">
         <form name="form">
             <input class="textview result" name="textview">
         </form>
         <table>
             <tr>
-                <td><button id="C" class="operator" onclick="c()">C</button></td>
-                <td><button id="CE" class="operator" onclick="back()">CE</button></td>
-                <td><button id="divide" class="operator" onclick="insert('/')">/</button></td>
-                <td><button id="multiply" class="operator" onclick="insert('*')">x</button></td>
+                <td><button id="C" class="operator erasecolor" onclick="c()">C</button></td>
+                <td><button id="CE" class="operator erasecolor" onclick="back()">CE</button></td>
+                <td><button id="divide" class="operator pastelcolor" onclick="insert('/')">/</button></td>
+                <td><button id="multiply" class="operator pastelcolor" onclick="insert('*')">x</button></td>
             </tr>
             <tr>
                 <td><button id="7" class="number" value="7" onclick="insert(7)">7</button></td>
                 <td><button id="8" class="number" value="8" onclick="insert(8)">8</button></td>
                 <td><button id="9" class="number" value="9" onclick="insert(9)">9</button></td>
-                <td><button id="minus" class="operator" onclick="insert('-')">-</button></td>
+                <td><button id="minus" class="operator pastelcolor" onclick="insert('-')">-</button></td>
             </tr>
             <tr>
                 <td><button id="4" class="number" value="4" onclick="insert(4)">4</button></td>
                 <td><button id="5" class="number" value="5" onclick="insert(5)">5</button></td>
                 <td><button id="6" class="number" value="6" onclick="insert(6)">6</button></td>
-                <td><button id="plus" class="operator" onclick="insert('+')">+</button></td>
+                <td><button id="plus" class="operator pastelcolor" onclick="insert('+')">+</button></td>
             </tr>
             <tr>
                 <td><button id="1" class="number" value="1" onclick="insert(1)">1</button></td>
                 <td><button id="2" class="number" value="2" onclick="insert(2)">2</button></td>
                 <td><button id="3" class="number" value="3" onclick="insert(3)">3</button></td>
-                <td><button id="equal" class="operator" onclick="equal()">=</button></td>
+                <td><button id="equal" class="operator pastelcolor" onclick="equal()">=</button></td>
             </tr>
             <tr>
                 <td><button class="empty"></button></td>
                 <td><button id="0" class="number" value="0" onclick="insert(0)">0</button></td>
                 <td><button class="empty"></button></td>
-                <td><button id="point" class="operator" onclick="insert('.')">.</button></td>
+                <td><button id="point" class="operator pastelcolor" onclick="insert('.')">.</button></td>
             </tr>
         </table>
     </section>
+    <footer>
+        <p><a href="pages/a-propos.html">A propos du site</a></p>
+        <p class="contact"><a href="pages/contact.html">Me contacter</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 

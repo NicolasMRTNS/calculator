@@ -1,58 +1,105 @@
-body {
-    background: linear-gradient(110deg, #df9881 50%, #58949c 50%);
-    background-attachment: fixed;
+html {
+  height: 100%;
 }
-section {
-    width: 320px;
-    padding: 15px;
-    padding-right: 30px;
-    border-radius: 5%;
-    background-color: #DFD8DC;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+body {
+  background: linear-gradient(130deg, #df9881 50%, #58949c 50%);
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  height: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+.calculator {
+  width: 400px;
+  border-radius: 5%;
+  background-color: #dfd8dc;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
 }
 button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 0;
-    margin: 15px;
-    font-family: 'Barlow', sans-serif;
-    font-size: larger;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  margin: 15px;
+  font-family: "Barlow", sans-serif;
+  font-size: larger;
 }
-.operator, .number {
-    cursor: pointer;
+.operator,
+.number {
+  cursor: pointer;
 }
-.empty, .number {
-    background-color: transparent;
+.empty,
+.number {
+  background-color: transparent;
 }
 form {
-    text-align: right;
-    font-family: 'Barlow', sans-serif;
-    padding-top: 15%;
-    padding-bottom: 10%;
-    display: flex;
-    justify-content: center;
-    width: 338px;
+  text-align: right;
+  font-family: "Barlow", sans-serif;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 400px;
+}
+td {
+  text-align: center;
 }
 input {
-    font-size: 30px;
-    text-align: right;
-    font-family: 'Barlow', sans-serif;
-    width: 300px;
-    border-radius: 50vh;
-    border-color: #eba68f #58949c #58949c #eba68f;
-    background-color: transparent;
-    padding: 10px 10px 10px 0;
+  font-size: 30px;
+  text-align: right;
+  font-family: "Barlow", sans-serif;
+  width: 335px;
+  border-radius: 50vh;
+  border-color: #eba68f #58949c #58949c #eba68f;
+  background-color: transparent;
+  padding: 10px 10px 10px 0;
 }
-.empty:focus, .operator:focus, .number:focus {
-    outline: 0;
+.empty:focus,
+.operator:focus,
+.number:focus {
+  outline: 0;
 }
-#C, #CE {
-    background-color: #98d5dd;
+.erasecolor {
+  background-color: #98d5dd;
 }
-#divide, #multiply, #minus, #plus, #equal, #point {
-    background-color: rgb(226, 186, 159);
+.pastelcolor {
+  background-color: rgb(226, 186, 159);
+}
+footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin: auto auto 0 auto;
+  border-top: #df9881 2px solid;
+  color: #dfd8dc;
+  width: 400px;
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin-top: 10px;
+}
+.contact {
+  margin-left: auto;
 }
