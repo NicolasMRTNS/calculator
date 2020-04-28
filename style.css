@@ -16,8 +16,11 @@ body {
 header {
   color: #58949c;
   font-size: 30px;
-  text-align: center;
+  margin: 0 auto 0 auto;
   width: 400px;
+}
+h1 {
+  text-align: center;
 }
 .use {
   color: #58949c;
