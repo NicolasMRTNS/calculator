@@ -66,14 +66,15 @@ document.addEventListener("keypress", function (e) {
     equal();
   }
 });
-document.addEventListener("keydown", function () {
-  if (event.key === "Backspace") {
+document.addEventListener("keydown", function (r) {
+  if (r.key === "Backspace") {
     back();
+    r.preventDefault();
   }
-  if (event.key === "Delete") {
+  if (r.key === "Delete") {
     c();
   }
-  if (event.key === "Enter") {
+  if (r.key === "Enter") {
     equal();
   }
 });

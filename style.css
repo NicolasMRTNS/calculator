@@ -14,9 +14,10 @@ body {
   font-family: "Barlow", sans-serif;
 }
 header {
-  margin: auto;
   color: #58949c;
-  font-size: 50px;
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
 }
 .use {
   color: #58949c;
@@ -132,4 +133,54 @@ p {
 }
 .contact {
   margin-left: auto;
+}
+@media all and (max-width: 1300px) {
+  .use {
+    width: 20%;
+    margin-left: 20px;
+  }
+  .by {
+    width: 20%;
+    margin-right: 20px;
+    margin-left: 77%;
+    top: -300px;
+  }
+}
+@media all and (max-width: 900px) {
+  .by, .use {
+    display: none;
+  }
+  header {
+    margin: 0 auto 0 auto;
+  }
+  .calculator {
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 460px) {
+  body {
+    width: 320px;
+  }
+  .calculator {
+    width: inherit;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  td {
+    margin: 0 0 0 10px;
+    text-align: left;
+
+  }
+  input {
+    padding: 0;
+  }
+  button {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+  table {
+    margin: 0;
+  }
 }
