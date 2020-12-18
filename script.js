@@ -6,75 +6,83 @@ function equal() {
   document.form.textview.value = eval(document.form.textview.value);
 }
 
+// Erase function
 function c() {
   document.form.textview.value = " ";
 }
 
+// Backspace
 function back() {
   let result = document.form.textview.value;
   document.form.textview.value = result.substring(0, result.length - 1);
 }
 
-document.addEventListener("keypress", function (e) {
-  if (e.key === "0") {
-    insert(0);
-  }
-  if (e.key === "1") {
-    insert(1);
-  }
-  if (e.key === "2") {
-    insert(2);
-  }
-  if (e.key === "3") {
-    insert(3);
-  }
-  if (e.key === "4") {
-    insert(4);
-  }
-  if (e.key === "5") {
-    insert(5);
-  }
-  if (e.key === "6") {
-    insert(6);
-  }
-  if (e.key === "7") {
-    insert(7);
-  }
-  if (e.key === "8") {
-    insert(8);
-  }
-  if (e.key === "9") {
-    insert(9);
-  }
-  if (e.key === "/") {
-    insert("/");
-    e.preventDefault(); // For Firefox (search in page hotkey)
-  }
-  if (e.key === "*") {
-    insert("*");
-  }
-  if (e.key === "-") {
-    insert("-");
-  }
-  if (e.key === "+") {
-    insert("+");
-  }
-  if (e.key === ".") {
-    insert(".");
-  }
-  if (e.key === "=") {
-    equal();
+// Switch to use keyboard
+document.addEventListener("keypress", (e) => {
+  switch (e.key) {
+    case "0":
+      insert(0);
+      break;
+    case "1":
+      insert(1);
+      break;
+    case "2":
+      insert(2);
+      break;
+    case "3":
+      insert(3);
+      break;
+    case "4":
+      insert(4);
+      break;
+    case "5":
+      insert(5);
+      break;
+    case "6":
+      insert(6);
+      break;
+    case "7":
+      insert(7);
+      break;
+    case "8":
+      insert(8);
+      break;
+    case "9":
+      insert(9);
+      break;
+    case "/":
+      insert("/");
+      break;
+    case "*":
+      insert("*");
+      break;
+    case "-":
+      insert("-");
+      break;
+    case "+":
+      insert("+");
+      break;
+    case ".":
+      insert(".");
+      break;
+    case "=":
+      insert("=");
+      break;
   }
 });
-document.addEventListener("keydown", function (r) {
-  if (r.key === "Backspace") {
-    back();
-    r.preventDefault();
-  }
-  if (r.key === "Delete") {
-    c();
-  }
-  if (r.key === "Enter") {
-    equal();
+
+// Another switch for "keydown" only
+document.addEventListener("keydown", (r) => {
+  switch (r.key) {
+    case "Backspace":
+      back();
+      r.preventDefault(); // Prevent Default for Firefox
+      break;
+    case "Delete":
+      c();
+      break;
+    case "Enter":
+      equal();
+      break;
   }
 });
